@@ -1,0 +1,382 @@
+.notificaciones-container {
+  width: 100%;
+}
+
+.notificaciones-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  color: #f0eaf5;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-subtitle {
+  color: #8c7a9e;
+  font-size: 14px;
+  margin: 6px 0 0;
+}
+
+.notificaciones-info {
+  background: #21182c;
+  border: 1px solid #3a2a4a;
+  color: #c8b9d8;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.correo-form {
+  background: #1e1428;
+  border: 1px solid #3a2a4a;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.form-title-box {
+  margin-bottom: 16px;
+}
+
+.form-title-box h3 {
+  color: #f0eaf5;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.form-title-box p {
+  color: #8c7a9e;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field-full {
+  grid-column: 1 / -1;
+}
+
+.filter-box {
+  background: #1e1428;
+  border: 1px solid #3a2a4a;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 300px;
+}
+
+.field-label {
+  font-size: 12px;
+  color: #a080b8;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid #3a2a4a;
+  background: #100a16;
+  color: #f0eaf5;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: #c060a0;
+  box-shadow: 0 0 0 3px rgba(192, 96, 160, 0.13);
+}
+
+.input::placeholder {
+  color: #695874;
+}
+
+.textarea {
+  min-height: 96px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.usuarios-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 45px;
+  padding: 12px;
+  background: #100a16;
+  border: 1px solid #3a2a4a;
+  border-radius: 12px;
+}
+
+.usuarios-preview p {
+  color: #8c7a9e;
+  font-size: 13px;
+  margin: 0;
+}
+
+.usuario-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #2a1d36;
+  border: 1px solid #4a365c;
+  color: #d8c8e8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.helper-text {
+  color: #8c7a9e;
+  font-size: 12px;
+}
+
+.table-wrapper {
+  background: #1e1428;
+  border: 1px solid #3a2a4a;
+  border-radius: 14px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #f0eaf5;
+  font-size: 14px;
+}
+
+.table th {
+  background: #2a1d36;
+  color: #c9b8d8;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid #3a2a4a;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #30223c;
+  vertical-align: middle;
+  line-height: 1.45;
+}
+
+.table tr:hover {
+  background: #24182f;
+}
+
+.empty {
+  text-align: center;
+  color: #8c7a9e;
+  padding: 18px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge-stock {
+  background: #4a2230;
+  color: #ff9ab5;
+}
+
+.badge-pedido {
+  background: #253a5a;
+  color: #9fc3ff;
+}
+
+.badge-envio {
+  background: #244534;
+  color: #9be0b1;
+}
+
+.badge-general {
+  background: #3a3048;
+  color: #d8c8e8;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-delete {
+  border: none;
+  border-radius: 9px;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #5080e0, #c060b0);
+  color: white;
+}
+
+.btn-secondary {
+  background: #322240;
+  color: #f0eaf5;
+  border: 1px solid #4a365c;
+}
+
+.btn-delete {
+  background: #6c2632;
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-delete:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error {
+  color: #ff9ab5;
+  background: #351822;
+  border: 1px solid #6c2632;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+.success {
+  color: #d8b4ff;
+  background: #241830;
+  border: 1px solid #4a365c;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+.loading {
+  color: #8c7a9e;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 6, 14, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.correo-modal {
+  width: 460px;
+  max-width: 92%;
+  background: #1e1428;
+  border: 1px solid #3a2a4a;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.55);
+}
+
+.correo-modal h3 {
+  color: #f0eaf5;
+  margin: 0 0 16px;
+  font-size: 22px;
+}
+
+.correo-box {
+  background: #100a16;
+  border: 1px solid #3a2a4a;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.correo-box p {
+  color: #d8c8e8;
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.correo-box strong {
+  color: #f0eaf5;
+  font-weight: 700;
+}
+
+.correo-mensaje {
+  margin-top: 10px;
+}
+
+.correo-mensaje p {
+  margin-top: 8px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.correo-note {
+  color: #8c7a9e;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+@media (max-width: 900px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .notificaciones-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-box {
+    max-width: 100%;
+  }
+
+  .correo-modal {
+    width: 90%;
+  }
+}
