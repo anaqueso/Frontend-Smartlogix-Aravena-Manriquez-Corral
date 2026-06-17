@@ -1,0 +1,154 @@
+.registro-page {
+  min-height: 100vh;
+  background: #18121e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.registro-card {
+  width: 400px;
+  background: #1e1428;
+  border: 1px solid #3a2a4a;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registro-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #c060a0, #8040c0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.registro-title {
+  color: #f0eaf5;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.registro-subtitle {
+  color: #7a6a88;
+  font-size: 14px;
+  margin: 6px 0 12px;
+}
+
+.registro-required-note {
+  width: 100%;
+  color: #6a5a78;
+  font-size: 11px;
+  margin: 0 0 16px;
+}
+
+.registro-required-note span {
+  color: #c060a0;
+}
+
+.registro-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.registro-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.registro-label {
+  font-size: 12px;
+  color: #a080b8;
+  font-weight: 500;
+}
+
+.registro-label span {
+  color: #c060a0;
+  margin-left: 2px;
+}
+
+.registro-input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #3a2a4a;
+  background: #100a16;
+  color: #f0eaf5;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.registro-input::placeholder {
+  color: #4a3a5a;
+}
+
+.registro-input:focus {
+  border-color: #c060a0;
+}
+
+.registro-hint {
+  color: #6a5a78;
+  font-size: 12px;
+  margin: 0;
+}
+
+.registro-error {
+  color: #c07878;
+  font-size: 13px;
+  margin: 0;
+}
+
+.registro-success {
+  color: #a06ab0;
+  font-size: 13px;
+  margin: 0;
+}
+
+.registro-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #5080e0, #c060b0);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 4px;
+}
+
+.registro-btn:hover {
+  opacity: 0.88;
+}
+
+.registro-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.registro-link {
+  color: #a06ab0;
+  text-decoration: none;
+  font-size: 13px;
+  margin-top: 18px;
+  transition: color 0.2s;
+}
+
+.registro-link:hover {
+  color: #f0eaf5;
+}

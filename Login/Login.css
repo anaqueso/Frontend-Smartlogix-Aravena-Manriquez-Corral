@@ -1,0 +1,137 @@
+.login-page {
+  min-height: 100vh;
+  background: #18121e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-card {
+  width: 380px;
+  background: #1e1428;
+  border: 1px solid #3a2a4a;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #c060a0, #8040c0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.login-title {
+  color: #f0eaf5;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.login-subtitle {
+  color: #7a6a88;
+  font-size: 14px;
+  margin: 6px 0 24px;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login-label {
+  font-size: 12px;
+  color: #a080b8;
+  font-weight: 500;
+}
+
+.login-label span {
+  color: #c060a0;
+  margin-left: 2px;
+}
+
+.login-input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #3a2a4a;
+  background: #100a16;
+  color: #f0eaf5;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-input::placeholder {
+  color: #4a3a5a;
+}
+
+.login-input:focus {
+  border-color: #c060a0;
+}
+
+.login-hint {
+  color: #6a5a78;
+  font-size: 12px;
+  margin: 0;
+}
+
+.login-error {
+  color: #c07878;
+  font-size: 13px;
+  margin: 0;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #5080e0, #c060b0);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 4px;
+}
+
+.login-btn:hover {
+  opacity: 0.88;
+}
+
+.login-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.login-link {
+  color: #a06ab0;
+  text-decoration: none;
+  font-size: 13px;
+  margin-top: 18px;
+  transition: color 0.2s;
+}
+
+.login-link:hover {
+  color: #f0eaf5;
+}
